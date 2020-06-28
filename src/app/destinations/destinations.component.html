@@ -1,0 +1,34 @@
+
+<div class="container-fluid wrapper bg-transparent pl-4 d-flex justify-content-center">
+<div class="row ml-4 mr-4" id="loc">
+  <div class="col-sm-12 col-md-6 col-lg-3 mt-4" *ngFor="let locData of locData ; index as productId">
+    <div class="card mb-4 bg-secondary text-white border b-3 mt-4">
+      <img src="{{ locData.image }}" class="card-img-top img-same d-none d-md-block" alt="travel image">
+      <div class="card-body">
+      <!-- <p class="float-right"><b>Created: </b>{{ locData.created }} </p><br>
+      <p></p> -->
+      <h4 class="card-title">{{ locData.name }}</h4>
+      <p><b>Location: </b><br>{{ locData.location }}</p>
+      <p><b>Start: </b><br>{{ locData.start }}</p>
+      <p><b>Price: </b><br>{{ locData.price }}</p>
+      <!-- <span class="d-flex justify-content-between"><button class="btn btn-transparent btn-md btn-outline-dark" routerLink="/blog">Read more</button> -->
+      <a><button class="btn btn-success btn-md" routerLink="/blog">Details & Book</button></a>
+      <!-- <div *ngFor="let product of locData; index as productId"><button class="btn btn-success btn-md"  (click)="addToCart(product)">Book&Pay</button></div> -->
+    </div>
+  </div>
+</div>
+</div>
+
+<!-- <div *ngFor="let product of products ; index as productId"> -->
+
+ <!-- <h3>
+   <a [routerLink]="['/destination-list', productId]">
+     {{ product.name }}
+   </a>
+ </h3> -->
+ <!-- <p *ngIf="product.description">
+   Description: {{ product.description }}
+ </p>
+
+</div> -->
+
